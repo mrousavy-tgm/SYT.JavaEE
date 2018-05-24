@@ -1,0 +1,58 @@
+%!TEX root=../main.tex	% Optional
+
+\section{Einführung}
+
+Diese Übung soll die Verwendung von Frameworks zur Umsetzung von low-level Implementierungen mit verteilten Objekten aufzeigen.
+
+\subsection{Ziele}
+
+Das Ziel dieser Übung ist der Einsatz von gängigen Enterprise-Frameworks in verschiedenen Tiers (View, BusinessLogic, Persistierung). Auf die Umsetzung der Skalierbarkeit, Verteilung und Wiederverwendung von Code wird besonders Wert gelegt. Dabei ist zu beachten, dass die einzelnen Teile unabhängig voneinander deployed werden können. Die Grundlagen zur Synchronisation und Replikation werden dabei näher erläutert.
+
+\subsection{Voraussetzungen}
+
+\begin{itemize}
+    \item Grundlagen einer höheren Programmiersprache
+    \item Grundlegendes Verständnis über Entwicklungsumgebungen
+\end{itemize}
+
+\subsection{Aufgabenstellung}
+
+Das Java Enterprise Framework ist kurz als Architektur zu beschreiben. Verwendete Quellen sind dabei auf jeden Fall entsprechend zu zitieren. Weiters ist die Installation eines Application-Servers und Deployment einer ausgewählten Beispielimplementierung zu beschreiben. Als wichtige Grundfunktionalität ist die Persistierung mittels einer geeigneten API zu implementieren. Um die Datenobjekte auch in entsprechenden Applikationen verwenden zu können, ist die Schnittstelle zwischen dieser API und der GUI zu beschreiben und zu implementieren.
+
+Serverseitige Programmierung innerhalb des Frameworks ist mittels einer einfachen Authentifizierung und einer einfachen Gruppenrichtlinien zu demonstrieren. Dabei sollen auch Änderungen an den Datensätzen geloggt und täglich als Bericht generiert werden. Diese Berichte sollen dann auch per Email an die Administratoren weitergeleitet werden.
+
+\subsection{Bewertung}
+
+\begin{itemize}
+    \item Gruppengrösse: 1 Person
+    \item Anforderungen "Grundkompetenz überwiegend erfüllt"
+    \begin{itemize}
+        \item Grundlegende Beschreibung der vorgestellten Frameworkarchitektur
+        \item Application Server installieren und starten
+        \item Beispielprojekt deployen und starten
+    \end{itemize}
+    \item Anforderungen "Grundkompetenz zur Gänze erfüllt"
+    \begin{itemize}
+        \item Datenobjekte persistieren (Beispielprojekt frei wählbar)
+    \end{itemize}
+    \item Anforderungen "Erweiterte-Kompetenz überwiegend erfüllt"
+    \begin{itemize}
+        \item CRUD Funktionalität über grafische Oberfläche zur Modifikation von Datenobjekten
+        \item Authentifikation
+    \end{itemize}
+    \item Anforderungen "Erweiterte-Kompetenz zur Gänze erfüllt"
+    \begin{itemize}
+        \item Gruppenrichtlinien für Modifikationen der Datenobjekte
+        \item Versenden von täglichem Statusbericht über Änderungen an Datenbasis an Admin per Email
+    \end{itemize}
+\end{itemize}
+
+\section{Quellen}
+\begin{itemize}
+	\item 'Overview of Enterprise Applications'; Introduction to the Java EE Platform; Oracle; Online: https://javaee.github.io/firstcup/java-ee001.html
+	\item 'Distributed Multitiered Applications'; The Java EE Tutorial; Oracle; Online: https://javaee.github.io/tutorial/overview004.html
+	\item 'Tutorial Examples'; Oracle; Online: https://github.com/javaee/tutorial-examples
+	\item 'Java EE 8 - GlassFish 5 Download'; Oracle; Online: https://javaee.github.io/glassfish/download
+\end{itemize}
+
+\clearpage
